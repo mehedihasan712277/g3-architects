@@ -228,6 +228,63 @@ nav ul li a {
     /* margin-top: -1000px; */
 }
 
+/* -----------fact section---------------- */
+#fact {
+    padding: 50px 140px;
+}
+
+.factTitle {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.factContent {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.factBox {
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.factDesc1 {
+    margin: 24px 0 100px;
+}
+
+.n {
+    font-size: 40px;
+    font-weight: 600;
+    color: #424242;
+}
+
+.factDesc {
+    color: #727272;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -251,7 +308,8 @@ nav ul li a {
 
     header,
     #feature,
-    #batch {
+    #batch,
+    #fact {
         padding: 50px 100px;
     }
 
@@ -274,6 +332,23 @@ nav ul li a {
         margin-left: 0;
     }
 
+    .factContent {
+        gap: 20px;
+    }
+
+    /* .n {
+        font-size: 20px;
+    }
+
+    .factDesc {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .factContent {
+        gap: 10px;
+    } */
+
 }
 
 @media screen and (max-width: 820px) {
@@ -293,6 +368,11 @@ nav ul li a {
         width: 100%;
         text-align: center;
     }
+
+    .factContent {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
 }
 
 /* small----------------------------------- */
@@ -300,7 +380,8 @@ nav ul li a {
 
     header,
     #feature,
-    #batch {
+    #batch,
+    #fact {
         padding: 20px 10px;
     }
 
@@ -376,6 +457,15 @@ nav ul li a {
 
     .s {
         font-size: 20px;
+    }
+
+    .factContent {
+        gap: 10px;
+    }
+
+    .factBox {
+        height: 190px;
+        width: 190px;
     }
 }
 
