@@ -148,8 +148,82 @@ nav ul li a {
     font-weight: 700;
 }
 
+/* ------------batch------------ */
+#batch {
+    padding: 85px 140px;
+}
 
+.batchContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
 
+.batchTitle {
+    color: #131313;
+    font-size: 40px;
+    font-weight: 700;
+    padding-left: 20px;
+    border-left: 5px solid #FF900E;
+}
+
+.batchDesc {
+    margin: 24px 0 32px;
+    line-height: normal;
+    font-size: 14px;
+}
+
+.bDesc {
+    font-size: 14px;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.batchContent {
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.bTitle {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.batchImg {
+    width: 500px;
+}
+
+.batch {
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 45px;
+    color: white;
+    text-align: center;
+    width: auto;
+    border: none;
+}
+
+.h {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.s {
+    font-size: 25px;
+}
+
+/* .batchPart2 {
+    position: relative;
+} */
+
+.batch {
+    position: relative;
+    top: -150px;
+    left: -20px;
+}
 
 
 
