@@ -98,6 +98,65 @@ nav ul li a {
     width: 100%;
 }
 
+/* ---------------feature part--------------  */
+#feature {
+    padding: 85px 140px;
+}
+
+.featureContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* background-color: blue; */
+}
+
+.featureImage {
+    width: 270px;
+}
+
+.featurePart1 {
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.featurePart2 {
+    width: 35%;
+}
+
+.featureDesc {
+    margin: 24px 0 32px;
+}
+
+.s1 {
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.s2 {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.s3 {
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
 /* ----------------------responsive web design-------------------- */
 /* extra large------------ */
 @media screen and (max-width: 1280px) {
@@ -112,13 +171,12 @@ nav ul li a {
 
 /* large--------------------- */
 @media screen and (max-width:1024px) {
-    header {
+
+    header,
+    #feature {
         padding: 50px 100px;
     }
 
-    section {
-        padding: 0 100px;
-    }
 }
 
 @media screen and (max-width: 820px) {
@@ -126,21 +184,26 @@ nav ul li a {
         padding: 20px 50px;
     }
 
-    section {
-        padding: 0 50px;
-    }
 }
 
 /* mediam---------------------------- */
-@media screen and (max-width: 768px) {}
-
-@media screen and (max-width: 425px) {
-    header {
-        padding: 20px 10px;
+@media screen and (max-width: 768px) {
+    .featureContainer {
+        flex-direction: column;
     }
 
-    section {
-        padding: 0 10px;
+    .featurePart2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* small----------------------------------- */
+@media screen and (max-width: 425px) {
+
+    header,
+    #feature {
+        padding: 20px 10px;
     }
 
     nav {
@@ -178,10 +241,20 @@ nav ul li a {
         font-size: 1rem;
         width: 100%;
     }
+
+    .featureImage {
+        width: 150px;
+    }
+
+    .featureTitle {
+        font-size: 25px;
+    }
+
+    .featureBtn {
+        width: 100%;
+    }
 }
 
-/* small-------------------------- */
-@media screen and (max-width:640px) {}
 
 @media screen and (max-width: 320px) {
 
@@ -189,9 +262,6 @@ nav ul li a {
         padding: 20px 10px;
     }
 
-    section {
-        padding: 0 10px;
-    }
 
     nav {
         flex-direction: column;
