@@ -277,9 +277,40 @@ nav ul li a {
     margin-top: 20px;
 }
 
+/* ----------sponsor section */
+.sponsor {
+    padding: 0 140px;
+}
 
+.sponsorTitle {
+    color: #131313;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
 
+.sponsorDesc {
+    text-align: center;
+    margin: 24px 0 50px;
+}
 
+.sponsorContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -----------footer----------- */
+footer {
+    padding: 130px 140px 200px;
+}
+
+.container {
+    border-radius: 8px;
+    background: #FFF4E7;
+    text-align: center;
+    padding: 30px 0;
+}
 
 
 
@@ -309,7 +340,9 @@ nav ul li a {
     header,
     #feature,
     #batch,
-    #fact {
+    #fact,
+    .sponsor,
+    footer {
         padding: 50px 100px;
     }
 
@@ -348,6 +381,9 @@ nav ul li a {
     .factContent {
         gap: 10px;
     } */
+    .spImg {
+        width: 100px;
+    }
 
 }
 
@@ -381,7 +417,9 @@ nav ul li a {
     header,
     #feature,
     #batch,
-    #fact {
+    #fact,
+    .sponsor,
+    footer {
         padding: 20px 10px;
     }
 
@@ -466,6 +504,21 @@ nav ul li a {
     .factBox {
         height: 190px;
         width: 190px;
+    }
+
+    .sponsorContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .spImg {
+        width: auto;
+        /* background-color: red; */
+    }
+
+    .container {
+        padding: 20px 10px;
     }
 }
 
